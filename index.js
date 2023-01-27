@@ -8,10 +8,9 @@ let stopLight = document.getElementById("stopLight");
 let slowLight = document.getElementById("slowLight");
 let goLight = document.getElementById("goLight");
 
-
 // Stop button
 stopButton.addEventListener("click", (event) => {
-  console.log(event.target + " was clicked");
+  console.log(event.target.innerText + " was clicked");
   stopLight.classList.toggle("stop");
   if (stopLight.classList == "bulb") {
     console.log("Stop bulb off");
@@ -20,10 +19,9 @@ stopButton.addEventListener("click", (event) => {
   };
 });
 
-
 // Slow button
 slowButton.addEventListener("click", (event) => {
-  console.log(event.target + " was clicked");
+  console.log(event.target.innerText + " was clicked");
   slowLight.classList.toggle("slow");
   if (slowLight.classList == "bulb") {
     console.log("Slow bulb off");
@@ -34,7 +32,7 @@ slowButton.addEventListener("click", (event) => {
 
 // Go button
 goButton.addEventListener("click", (event) => {
-  console.log(event.target + " was clicked");
+  console.log(event.target.innerText + " was clicked");
   goLight.classList.toggle("go");
   if (goLight.classList == "bulb") {
     console.log("Go bulb off");
